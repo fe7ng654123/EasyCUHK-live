@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/blackboard_icon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="45dp"
+        app:layout_constraintEnd_toStartOf="@+id/library_icon"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/blackboard" />
+
+    <TextView
+        android:id="@+id/blackboard_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blackboard"
+        app:layout_constraintEnd_toEndOf="@+id/blackboard_icon"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/blackboard_icon"
+        app:layout_constraintTop_toBottomOf="@+id/blackboard_icon" />
+
+    <ImageView
+        android:id="@+id/library_icon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="50dp"
+        app:layout_constraintEnd_toStartOf="@+id/MyCUHK_icon"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/blackboard_icon"
+        app:layout_constraintTop_toTopOf="@+id/blackboard_icon"
+        app:srcCompat="@drawable/library" />
+
+    <TextView
+        android:id="@+id/library_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CU Library"
+        app:layout_constraintEnd_toEndOf="@+id/library_icon"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/library_icon"
+        app:layout_constraintTop_toBottomOf="@+id/library_icon" />
+
+    <ImageView
+        android:id="@+id/MyCUHK_icon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/library_icon"
+        app:layout_constraintTop_toTopOf="@+id/library_icon"
+        app:srcCompat="@drawable/mycuhk" />
+
+    <TextView
+        android:id="@+id/MyCUHK_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CUSIS"
+        app:layout_constraintEnd_toEndOf="@+id/MyCUHK_icon"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/MyCUHK_icon"
+        app:layout_constraintTop_toBottomOf="@+id/MyCUHK_icon" />
+
+    <ImageView
+        android:id="@+id/ureply_icon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="45dp"
+        app:layout_constraintEnd_toStartOf="@+id/keepoll_icon"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/blackboard_icon"
+        app:srcCompat="@drawable/ureply" />
+
+    <TextView
+        android:id="@+id/ureply_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ureply"
+        app:layout_constraintEnd_toEndOf="@+id/ureply_icon"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/ureply_icon"
+        app:layout_constraintTop_toBottomOf="@+id/ureply_icon" />
+
+    <ImageView
+        android:id="@+id/keepoll_icon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ureply_icon"
+        app:layout_constraintTop_toTopOf="@+id/ureply_icon"
+        app:srcCompat="@drawable/keepoll" />
+
+    <TextView
+        android:id="@+id/keepoll_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Keepoll"
+        app:layout_constraintEnd_toEndOf="@+id/keepoll_icon"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/keepoll_icon"
+        app:layout_constraintTop_toBottomOf="@+id/keepoll_icon" />
+
+    <ImageView
+        android:id="@+id/bus_icon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toStartOf="@+id/calendar_icon"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ureply_icon"
+        app:srcCompat="@drawable/bus_icon" />
+
+    <TextView
+        android:id="@+id/bus_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bus Route"
+        app:layout_constraintEnd_toEndOf="@+id/bus_icon"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/bus_icon"
+        app:layout_constraintTop_toBottomOf="@+id/bus_icon" />
+
+    <ImageView
+        android:id="@+id/calendar_icon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bus_icon"
+        app:layout_constraintTop_toTopOf="@+id/bus_icon"
+        app:srcCompat="@drawable/calendar" />
+
+    <TextView
+        android:id="@+id/calendar_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="School Almanac"
+        app:layout_constraintEnd_toEndOf="@+id/calendar_icon"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/calendar_icon"
+        app:layout_constraintTop_toBottomOf="@+id/calendar_icon" />
+
+    <ImageView
+        android:id="@+id/reg_course_icon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/reg_course" />
+
+    <TextView
+        android:id="@+id/reg_course_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Reg courses"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/reg_course_icon"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/reg_course_icon"
+        app:layout_constraintTop_toBottomOf="@+id/reg_course_icon" />
+
+    <ImageView
+        android:id="@+id/map_icon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toStartOf="@+id/event_icon"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bus_icon"
+        app:srcCompat="@drawable/map" />
+
+    <TextView
+        android:id="@+id/map_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Campus Map"
+        app:layout_constraintEnd_toEndOf="@+id/map_icon"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/map_icon"
+        app:layout_constraintTop_toBottomOf="@+id/map_icon" />
+
+    <ImageView
+        android:id="@+id/event_icon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/map_icon"
+        app:layout_constraintTop_toTopOf="@+id/map_icon"
+        app:srcCompat="@drawable/event" />
+
+    <TextView
+        android:id="@+id/event_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Event Registration"
+        app:layout_constraintEnd_toEndOf="@+id/event_icon"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/event_icon"
+        app:layout_constraintTop_toBottomOf="@+id/event_icon" />
+
+    <TextView
+        android:id="@+id/frequent"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="#579C27B0"
+        android:text="Frequently Used"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/quick"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="15dp"
+        android:background="#57FFEB3B"
+        android:text="Quick Info"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/keepoll_text" />
+
+    <TextView
+        android:id="@+id/shortcuts"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="15dp"
+        android:background="#5100BCD4"
+        android:text="Shortcuts"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendar_text" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
