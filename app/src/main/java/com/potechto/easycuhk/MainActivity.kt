@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         }
         val mycuhk: ImageView = findViewById(R.id.MyCUHK_icon)
         mycuhk.setOnClickListener() {
-            startWebviwer("https://cusis.cuhk.edu.hk/psp/CSPRD/?cmd=login&languageCd=ENG&")
+            startWebviwer("https://cusis.cuhk.edu.hk/")
         }
         val ureply: ImageView = findViewById(R.id.ureply_icon)
         ureply.setOnClickListener() {
@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity() {
 
         val calendar: ImageView = findViewById(R.id.calendar_icon)
         calendar.setOnClickListener() {
-            startWebviwer("http://www.res.cuhk.edu.hk/en-gb/general-information/university-almanac/university-almanac-for-19-20")
+            startWebviwer("http://www.res.cuhk.edu.hk/en-gb/general-information/university-almanac")
         }
 
         val regcouse: ImageView = findViewById(R.id.reg_course_icon)

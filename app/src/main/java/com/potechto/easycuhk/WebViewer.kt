@@ -30,7 +30,11 @@ class WebViewer : AppCompatActivity() {
                 handler: SslErrorHandler,
                 error: SslError
             ) {
-                handler.proceed()
+                if (error.primaryError != SslError.SSL_UNTRUSTED) {
+                    handler.proceed()
+                } else {
+                    Toast.makeText(applicationContext, "not trusted", Toast.LENGTH_SHORT).show()
+                }
             }
         }
         val MainButton: TextView = findViewById(R.id.main_button)
