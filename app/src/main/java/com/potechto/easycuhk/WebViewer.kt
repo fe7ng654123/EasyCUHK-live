@@ -25,17 +25,18 @@ class WebViewer : AppCompatActivity() {
         supportActionBar?.hide()
         setContentView(R.layout.web_view)
         webViewer.webViewClient = object : WebViewClient() {
-            override fun onReceivedSslError(
-                view: WebView,
-                handler: SslErrorHandler,
-                error: SslError
-            ) {
-                if (error.primaryError != SslError.SSL_UNTRUSTED) {
-                    handler.proceed()
-                } else {
-                    Toast.makeText(applicationContext, "not trusted", Toast.LENGTH_SHORT).show()
-                }
-            }
+//            override fun onReceivedSslError(
+//                view: WebView,
+//                handler: SslErrorHandler,
+//                error: SslError
+//            ) {
+//                if (error.primaryError != SslError.SSL_UNTRUSTED) {
+//                    handler.proceed()
+//                } else {
+//                    Toast.makeText(applicationContext, "not trusted", Toast.LENGTH_SHORT).show()
+//                    handler.cancel()
+//                }
+//            }
         }
         val MainButton: TextView = findViewById(R.id.main_button)
         MainButton.setOnClickListener {
