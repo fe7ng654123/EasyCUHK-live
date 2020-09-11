@@ -44,9 +44,10 @@ class Scanner : AppCompatActivity(), ZXingScannerView.ResultHandler {
             warning.isVisible = false
         } else {
             url_hearder = "https://server5.ureply.mobi/student/mobile_index.php"
-            textView.setText("Input Session no.")
-            editText.setHint("LM2233")
-            warning.isVisible = true
+            textView.setText("Go to manual input page")
+//            editText.setHint("LM2233")
+            editText.isVisible = false
+            warning.isVisible = false
         }
         button.setOnClickListener() {
             startWebviwer(url_hearder + editText.text)
